@@ -112,7 +112,7 @@ var education = {
 		"title" : "Intro to programming nanodegree",
 		"location" : "5-5-15 Kitashinagawa Shinagawa-ku, Toyko",
 		"school" : "Udaicty",
-		"dates" : 2017,
+		"dates" : "2017",
 		"url" : "https://www.udacity.com/"
 		}
 	]
