@@ -25,8 +25,8 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
+  font-size: 55px;
+  color: #f5a623;   
   line-height: 48px;
   display: inline;
 }
@@ -34,15 +34,15 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #999999;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
+  font-style: bold;
   font-size: 20px;
-  color: #000;
+  color: #999999;
   line-height: 22px;
 }
 
@@ -86,7 +86,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #0000FF;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -95,7 +95,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #DDFFFF;
   line-height: 28px;
 }
 
@@ -129,7 +129,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #8fbc8f;
 }
 
 .flex-box {
@@ -159,7 +159,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 150px;
   display: none;
 }
 
