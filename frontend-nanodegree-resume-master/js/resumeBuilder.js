@@ -7,144 +7,225 @@ var work = {
 	{
 	"employer" : "3e Inc.",
 	"title" : "Server Support Engineer",
-	"location" : "Japan Shibuya",
+	"location" : "3-8 Shibuya-ku nanpeidaicho, Tokyo ",
 	"dates" : "May 2014 – Aug 2014  4 monhts",
-	"description" : "Bilingual network engineer, \
-	Trouble shooting on networking issue,\
-	Sometimes Translate work manuals from English to Japanese,\
-	Communicating with Singapore regarding networking problem"
+	"description" : "Bilingual network engineer" +
+	"Trouble shooting on networking issue," +
+	"Sometimes Translate work manuals from English to Japanese," +
+	"Communicating with Singapore regarding networking problem"
 	},
 
 	{
 	"employer" : "Nihon Aspect Core",
 	"title" : "Administrative assistent",
-	"location" : "Japan Roppongi",
+	"location" : "4-1-3 Chiyoda Kudanshita Tokyo",
 	"dates" : "Sep 2014 – Nov 2015, 1 year 3 months",
-	"description" : "Working as contingent worker in Goldman Sachs Japans Holdings,\
-	Administrative Assistant under Accounting Service Division,\
-	Classifying and Databasing invoice and other documents,\
-	Ordering office supplies,\
-	Communicating all over the world regarding invoices in English,\
-	Sometimes translate work manuals from English to Japanese and vice versa."
+	"description" : "Working as contingent worker in Goldman Sachs Japans Holdings" +
+	"Administrative Assistant under Accounting Service Division," +
+	"Classifying and Databasing invoice and other documents," +
+	"Ordering office supplies" +
+	"Communicating all over the world regarding invoices in English," +
+	"Sometimes translate work manuals from English to Japanese and vice versa."
 	},
 
 	{
 	"employer" : "Booking.com",
-	"location" : "Japan Osaki",
+	"location" : "5-5-15 Kitashinagawa Shinagawa-ku, Toyko",
 	"title" : "Customer Service Senior Executive",
 	"dates" : "Dec 2015 – Present , Employment Duration1 year 6 month",
-	"description" : "Handling guest issues and hotel issues.\
-	Liaison between hotel and customer.\
-	Managing special request and other calls , trouble shooting with hotel related issues.\
-	Managing payout for bookings. Understanding hotel system called extra net." 
+	"description" : "Handling guest issues and hotel issues." + 
+	"Liaison between hotel and customer." +
+	"Managing special request and other calls , trouble shooting with hotel related issues." +
+	"Managing payout for bookings. Understanding hotel system called extra net." 
 	}
 	]
-}
+};
 
 var projects = {
 	"projects" : [
 	{
 	"title" : "code your own quiz",
 	"dates" : "Mar 2017",
-	"description" : "Made my own quiz by using python\
-	the python reacts depending on the users answer.\
-	If it is correct, it asks users to go next step, otherwise\
-	users are asked to do the quiz once again.\
-	I cared to store the inforation with simple and easy way, and I\
-	tried to repeate necessary action with fewest lines of code.",
+	"description" : "Made my own quiz by using python" +
+	"the python reacts depending on the users answer." +
+	"If it is correct, it asks users to go next step, otherwise" +
+	"users are asked to do the quiz once again." +
+	"I cared to store the inforation with simple and easy way, and I" +
+	"tried to repeate necessary action with fewest lines of code.",
 	"images"　: "images/code_own_quiz.png"
 	},
 
 	{
 	"title" : "create my movie website",
 	"dates" : "Apr 2017",
-	"description" : "The website shows my favorite movies.\
-	It is consisted by my favorite 6 movies.\
-	Once users click the image photo, it plays trailer.\
-	The website was made with HTML and Python.",
+	"description" : "The website shows my favorite movies." +
+	"It is consisted by my favorite 6 movies." +
+	"Once users click the image photo, it plays trailer." +
+	"The website was made with HTML and Python.",
 	"images"　: "images/make_own_website.png"
 	}
 	]
-}
+};
 
 var bio = {
 	"name" : "Kohki Sato",
-	"Role" : "Customer Service supervisor",
-	"location" : "Japan okyo",
-	"contact_info" : {
-		"email" : "E-mail : k48692003@yahoo.co.jp",
-		"mobile" : "phone number : 090-2532-0132"
+	"role" : "Customer Service supervisor",
+	"contacts" : {
+		"email" : "k48692003@yahoo.co.jp",
+		"mobile" : "090-2532-0132",
+		"location" : "4-10-28 Shibuya Tokyo",
+		"github" : "kohki1234"
 	},
 	"biopic" : "images/me.jpg",
-	"welcome_message" : "Hi, this is Kohki. welocome to my resume. I would like to show my skills and background via this resume",
+	"welcomeMessage" : "Hi, this is Kohki. welocome to my resume. I would like to show my skills and background via this resume",
 	"skills" : [
 	"Customer handling, problem solving skills, HTML/CSS"
 	]
-}
+};
 
 
 var education = {
 	"schools" :[
 		{
-		"school" : "Kokugakuin Unviersity",
-		"location" : "Shibuya",
-		"major" : "Linguistic",
-		"minor" : "Literature",
-		"graduation year" : 2009
+		"name" : "Kokugakuin high school",
+		"degree" : "N/A",
+		"location" : "Jingu Mae 2-2-3; Shibuya, Tokyo 150-0001",
+		"majors" : "General Course",
+		"minors" : "N/A",
+		"dates" : "2006 Apr-2009 Mar",
+		"url": "http://www.kokugakuin.ed.jp/"
+		},
+
+		{
+		"name" : "Kokugakuin Unviersity",
+		"location" : "5-5-15 Kitashinagawa Shinagawa-ku, Toyko",
+		"degree" : "BA/ Bacelor of arts",
+		"majors" : "Linguistic",
+		"minors" : "Literature",
+		"dates" : "2009 Apr-2013 Mar",
+		"url": "https://www.kokugakuin.ac.jp/"
 		}
 	],
 
-	"Online Course" : [
+	"onlineCourses" : [
 		{
 		"title" : "Intro to programming nanodegree",
-		"location" : "United States",
+		"location" : "5-5-15 Kitashinagawa Shinagawa-ku, Toyko",
 		"school" : "Udaicty",
-		"Dates" : 2017,
-		"url" : ""
+		"dates" : 2017,
+		"url" : "https://www.udacity.com/"
 		}
 	]
-}
+};
 
 
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-formattedName = HTMLheaderName.replace("%data%", bio.name)
-$("#header").append(formattedName)
+formattedName = HTMLheaderName.replace("%data%", bio.name);
+$("#header").prepend(formattedName);
 
 
-if (bio.skills.length > 0) {
-	$("#header").append(HTMLskillsStart);
-	var formattedSkill =　HTMLskills.replace("%data%", bio.skills[0]);
-	$("#skills").append(formattedSkill);	
-} 
+var HTMLheaderRole = '<span>%data%</span><hr>';
+formattedHTMLheaderRole = HTMLheaderRole.replace("%data%",bio.role);
+$("#header").append(formattedHTMLheaderRole);
 
 
-function displayWork(){
-	for(job in work.jobs){
+
+
+education.display = function(){
+	education.schools.forEach(function(school){
+		
+		$("#education").append(HTMLschoolStart);
+
+
+		var formattedHTMLschoolName = HTMLschoolName.replace("%data%",school.name);
+		$(".education-entry:last").append(formattedHTMLschoolName);
+
+		var formattedHTMLschoolDegree = HTMLschoolDegree.replace("%data%",school.degree);
+		$(".education-entry:last").append(formattedHTMLschoolDegree);
+
+		var formattedHTMLschoolDates = HTMLschoolDates.replace("%data%",school.dates);
+		$(".education-entry:last").append(formattedHTMLschoolDates);
+
+		var formattedHTMLschoolLocation = HTMLschoolLocation.replace("%data%",school.location);
+		$(".education-entry:last").append(formattedHTMLschoolLocation);
+	});
+
+
+	education.onlineCourses.forEach(function(course){
+
+		$(".education-entry:last").append(HTMLonlineClasses);
+
+		var formattedHTMLonlineTitle = HTMLonlineTitle.replace("%data%",course.title);
+		$(".education-entry:last").append(formattedHTMLonlineTitle);
+
+
+		var formattedHTMLonlineSchool = HTMLonlineSchool.replace("%data%",course.school);
+		$(".education-entry:last").append(formattedHTMLonlineSchool);
+
+		var formattedHTMLonlineDates = HTMLonlineDates.replace("%data%",course.dates);
+		$(".education-entry:last").append(formattedHTMLonlineDates);
+
+		//var formattedHTMLonlineURL =  HTMLonlineURL.replace("%data%",course.url);
+		//$(".education-entry:last").append(formattedHTMLonlineURL);
+
+	});
+};
+
+
+education.display();
+
+
+bio.display = function(){
+
+		var formattedHTMLbioPic = HTMLbioPic.replace("%data%",bio.biopic);
+		$("#header").append(formattedHTMLbioPic);
+
+		var formattedHTMLwelcomeMsg = HTMLwelcomeMsg.replace("%data%",bio.welcomeMessage);
+		$("#header").append(formattedHTMLwelcomeMsg);
+
+		var formattedHTMLmobile = HTMLmobile.replace("%data%",bio.contacts.mobile);
+		$("#header").append(formattedHTMLmobile);
+
+		var formattedHTMLemail = HTMLemail.replace("%data%",bio.contacts.email);
+		$("#header").append(formattedHTMLemail);
+
+		if (bio.skills.length > 0) {
+			$("#header").append(HTMLskillsStart);
+			var formattedSkill =　HTMLskills.replace("%data%", bio.skills[0]);
+			$("#skills").append(formattedSkill);	
+		} 
+};
+
+bio.display();
+
+
+work.display = function(){
+work.jobs.forEach(function(job){
+		
 		$("#workExperience").append(HTMLworkStart);
 
-		var formattedHTMLworkEmployer =　HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
-		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		var formattedEmployerTitle = formattedHTMLworkEmployer + formattedTitle;
+			var formattedHTMLworkEmployer =　HTMLworkEmployer.replace("%data%", job.employer);
+			var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
+			var formattedEmployerTitle = formattedHTMLworkEmployer + formattedTitle;
 
-		$(".work-entry:last").append(formattedHTMLworkEmployer);
+			$(".work-entry:last").append(formattedHTMLworkEmployer);
 
-		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		var formattedDescription = HTMLworkDescription.replace("%data%",work.jobs[job].description);
-		var formattedDateDescription = formattedDate + formattedDescription;
+			var formattedDate = HTMLworkDates.replace("%data%", job.dates);
+			var formattedDescription = HTMLworkDescription.replace("%data%",job.description);
+			var formattedDateDescription = formattedDate + formattedDescription;
 
-		$(".work-entry:last").append(formattedDateDescription);
+			$(".work-entry:last").append(formattedDateDescription);
+		   }) ;
+};
 
-	   }
-}
 
-displayWork();
-
+work.display();
 
 $(document).click(function(loc) {
   var x = loc.pageX;
   var y = loc.pageY;
 
-  logClicks(x,y)
+  logClicks(x,y);
 });
 
 
@@ -160,24 +241,27 @@ function inName(name){
 
 inName(bio.name);
 
-projects.display = function() {
-	for (project in projects.projects){
-		$("#projects").append(HTMLprojectStart);
 
-		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedProjectTitle);
+projects.display = function(){
+projects.projects.forEach(function(project){
+	$("#projects").append(HTMLprojectStart);
+		
+	var formattedProjectTitle = HTMLprojectTitle.replace("%data%", project.title);
+	$(".project-entry:last").append(formattedProjectTitle);
 
-		var formattedProjectDates =  HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$(".project-entry:last").append(formattedProjectDates);
+	var formattedProjectDates =  HTMLprojectDates.replace("%data%", project.dates);
+	$(".project-entry:last").append(formattedProjectDates);
 
-		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedProjectDescription)
+	var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
+	$(".project-entry:last").append(formattedProjectDescription);
 
-		var formattedProjectPic = HTMLprojectImage.replace("%data%", projects.projects[project].images);
-		$(".project-entry:last").append(formattedProjectPic)
-	}
-}
+	var formattedProjectPic = HTMLprojectImage.replace("%data%", project.images);
+	$(".project-entry:last").append(formattedProjectPic);
+	});
+};
 
 projects.display();
 
 $("#mapDiv").append(googleMap);
+
+
