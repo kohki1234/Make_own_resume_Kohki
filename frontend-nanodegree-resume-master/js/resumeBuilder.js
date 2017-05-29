@@ -49,7 +49,7 @@ var projects = {
                 "users are asked to do the quiz once again." +
                 "I cared to store the inforation with simple and easy way, and I" +
                 "tried to repeate necessary action with fewest lines of code.",
-            "images"　: ["images/code_own_quiz.png",]
+            "images"　: ["images/code_own_quiz.png"]
         },
 
         {
