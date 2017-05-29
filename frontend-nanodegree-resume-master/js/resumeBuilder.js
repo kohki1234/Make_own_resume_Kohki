@@ -52,7 +52,7 @@ var projects = {
 	"users are asked to do the quiz once again." +
 	"I cared to store the inforation with simple and easy way, and I" +
 	"tried to repeate necessary action with fewest lines of code.",
-	"images"　: "images/code_own_quiz.png"
+	"images"　: ["images/code_own_quiz.png"]
 	},
 
 	{
@@ -62,7 +62,7 @@ var projects = {
 	"It is consisted by my favorite 6 movies." +
 	"Once users click the image photo, it plays trailer." +
 	"The website was made with HTML and Python.",
-	"images"　: "images/make_own_website.png"
+	"images"　: ["images/make_own_website.png"]
 	}
 	]
 };
@@ -90,7 +90,7 @@ var education = {
 		"name" : "Kokugakuin high school",
 		"degree" : "N/A",
 		"location" : "Jingu Mae 2-2-3; Shibuya, Tokyo 150-0001",
-		"majors" : "General Course",
+		"majors" : ["General Course"],
 		"minors" : "N/A",
 		"dates" : "2006 Apr-2009 Mar",
 		"url": "http://www.kokugakuin.ed.jp/"
@@ -100,7 +100,7 @@ var education = {
 		"name" : "Kokugakuin Unviersity",
 		"location" : "5-5-15 Kitashinagawa Shinagawa-ku, Toyko",
 		"degree" : "BA/ Bacelor of arts",
-		"majors" : "Linguistic",
+		"majors" : ["Linguistic"],
 		"minors" : "Literature",
 		"dates" : "2009 Apr-2013 Mar",
 		"url": "https://www.kokugakuin.ac.jp/"
@@ -117,17 +117,6 @@ var education = {
 		}
 	]
 };
-
-
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-formattedName = HTMLheaderName.replace("%data%", bio.name);
-$("#header").prepend(formattedName);
-
-
-var HTMLheaderRole = '<span>%data%</span><hr>';
-formattedHTMLheaderRole = HTMLheaderRole.replace("%data%",bio.role);
-$("#header").append(formattedHTMLheaderRole);
-
 
 
 
@@ -172,10 +161,14 @@ education.display = function(){
 };
 
 
-education.display();
-
-
 bio.display = function(){
+		var HTMLheaderName = '<h1 id="name">%data%</h1>';
+		formattedName = HTMLheaderName.replace("%data%", bio.name);
+		$("#header").prepend(formattedName);
+
+		var HTMLheaderRole = '<span>%data%</span><hr>';
+		formattedHTMLheaderRole = HTMLheaderRole.replace("%data%",bio.role);
+		$("#header").append(formattedHTMLheaderRole);
 
 		var formattedHTMLbioPic = HTMLbioPic.replace("%data%",bio.biopic);
 		$("#header").append(formattedHTMLbioPic);
@@ -196,8 +189,6 @@ bio.display = function(){
 		} 
 };
 
-bio.display();
-
 
 work.display = function(){
 work.jobs.forEach(function(job){
@@ -206,9 +197,11 @@ work.jobs.forEach(function(job){
 
 			var formattedHTMLworkEmployer =　HTMLworkEmployer.replace("%data%", job.employer);
 			var formattedTitle = HTMLworkTitle.replace("%data%", job.title);
-			var formattedEmployerTitle = formattedHTMLworkEmployer + formattedTitle;
+			var formattedHTMLworkLocation = HTMLworkLocation.replace("%data%",job.location);
 
-			$(".work-entry:last").append(formattedHTMLworkEmployer);
+			var formattedEmployerTitle = formattedHTMLworkEmployer + formattedTitle + formattedHTMLworkLocation;
+
+			$(".work-entry:last").append(formattedEmployerTitle);
 
 			var formattedDate = HTMLworkDates.replace("%data%", job.dates);
 			var formattedDescription = HTMLworkDescription.replace("%data%",job.description);
@@ -217,9 +210,6 @@ work.jobs.forEach(function(job){
 			$(".work-entry:last").append(formattedDateDescription);
 		   }) ;
 };
-
-
-work.display();
 
 $(document).click(function(loc) {
   var x = loc.pageX;
@@ -241,7 +231,6 @@ function inName(name){
 
 inName(bio.name);
 
-
 projects.display = function(){
 projects.projects.forEach(function(project){
 	$("#projects").append(HTMLprojectStart);
@@ -255,12 +244,17 @@ projects.projects.forEach(function(project){
 	var formattedProjectDescription = HTMLprojectDescription.replace("%data%", project.description);
 	$(".project-entry:last").append(formattedProjectDescription);
 
-	var formattedProjectPic = HTMLprojectImage.replace("%data%", project.images);
-	$(".project-entry:last").append(formattedProjectPic);
+	projects.projects.forEach(function(image) {
+	    var formattedProjectPic = HTMLprojectImage.replace("%data%", image.images);
+		$(".project-entry:last").append(formattedProjectPic);
+		});
 	});
 };
 
 projects.display();
+work.display();
+bio.display();
+education.display();
 
 $("#mapDiv").append(googleMap);
 
