@@ -134,7 +134,7 @@ function initializeMap() {
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
     education.schools.forEach(function(school){
-      locations.push(education.location);
+      locations.push(school.location);
     });
 
     // iterates through work locations and appends each location to
@@ -142,7 +142,7 @@ function initializeMap() {
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
     work.jobs.forEach(function(job){
-       locations.push(work.location);
+      locations.push(job.location);
     });
 
     return locations;
@@ -153,10 +153,11 @@ function initializeMap() {
   placeData is the object returned from search results containing information
   about a single location.
   */
- function createMapMarker(placeData) {
+  function createMapMarker(placeData) {
+
     // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.lat();
-    var lon = placeData.geometry.location.lng();
+    var lat = placeData.geometry.location.lat();  // latitude from the place service
+    var lon = placeData.geometry.location.lng();  // longitude from the place service
     var name = placeData.formatted_address;   // name of the place from the place service
     var bounds = window.mapBounds;            // current boundaries of the map window
 
@@ -176,7 +177,7 @@ function initializeMap() {
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map, marker);
+      // your code goes here!
     });
 
     // this is where the pin actually gets added to the map.
@@ -243,6 +244,6 @@ window.addEventListener('load', initializeMap);
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
 window.addEventListener('resize', function(e) {
-  //Make sure the map bounds get updated on page resize;
+  //Make sure the map bounds get updated on page resize
   map.fitBounds(mapBounds);
 });
